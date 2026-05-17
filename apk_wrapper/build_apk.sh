@@ -86,9 +86,11 @@ if [[ ! -d "jdk" ]] && [[ ! -d "JDK" ]]; then
 fi
 
 # 5. Generate keystore if not present
-if [[ ! -f "keystore.jks" ]]; then
+if [[ ! -f "app/my-release-key.jks" ]]; then
     echo -e "${BLUE}Generating signing keystore (one-time)...${RESET}"
     ./make.sh keygen
+else
+    echo -e "${GREEN}✓${RESET} Keystore already exists"
 fi
 
 # 6. Copy our config and icon into the tool directory
