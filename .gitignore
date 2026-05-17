@@ -39,3 +39,7 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Internal docs (not for GitHub)
+INSTRUCTIONS.md
+PROMPT_FOR_LOCAL_CLAUDE.md
