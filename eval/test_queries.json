@@ -1,0 +1,60 @@
+{
+  "description": "ClinicSearch evaluation set — 50 queries across 5 languages and 6 clinical categories. Used by scripts/run_evaluation.py to compute precision@k and refusal accuracy.",
+  "version": "1.0",
+  "queries": [
+    {"id": "en_malaria_1", "lang": "en", "category": "malaria", "query": "First-line treatment for uncomplicated malaria in children", "expected_source_contains": "WHO"},
+    {"id": "en_malaria_2", "lang": "en", "category": "malaria", "query": "Artemisinin combination therapy dosing for adults", "expected_source_contains": "WHO"},
+    {"id": "en_tb_1", "lang": "en", "category": "infectious_disease", "query": "Standard treatment regimen for drug-susceptible pulmonary tuberculosis", "expected_source_contains": "WHO"},
+    {"id": "en_tb_2", "lang": "en", "category": "infectious_disease", "query": "Treatment duration for latent TB infection", "expected_source_contains": "WHO"},
+    {"id": "en_maternal_1", "lang": "en", "category": "maternal", "query": "Magnesium sulfate dose for severe preeclampsia", "expected_source_contains": "WHO"},
+    {"id": "en_maternal_2", "lang": "en", "category": "maternal", "query": "Oxytocin for prevention of postpartum hemorrhage", "expected_source_contains": "WHO"},
+    {"id": "en_nutrition_1", "lang": "en", "category": "nutrition", "query": "Management of severe acute malnutrition in children under 5", "expected_source_contains": "MSF"},
+    {"id": "en_nutrition_2", "lang": "en", "category": "nutrition", "query": "Vitamin A supplementation dose for children", "expected_source_contains": "WHO"},
+    {"id": "en_drug_1", "lang": "en", "category": "drug_interactions", "query": "Warfarin and aspirin interaction risks", "expected_source_contains": "OpenFDA"},
+    {"id": "en_drug_2", "lang": "en", "category": "drug_interactions", "query": "Contraindications for metformin", "expected_source_contains": "OpenFDA"},
+    {"id": "en_emergency_1", "lang": "en", "category": "emergency", "query": "Anaphylaxis treatment in adults epinephrine dose", "expected_source_contains": "WHO"},
+    {"id": "en_emergency_2", "lang": "en", "category": "emergency", "query": "Initial management of sepsis", "expected_source_contains": "MSF"},
+
+    {"id": "pt_malaria_1", "lang": "pt", "category": "malaria", "query": "Qual é o tratamento de primeira linha para malária não complicada em crianças?", "expected_source_contains": "WHO"},
+    {"id": "pt_malaria_2", "lang": "pt", "category": "malaria", "query": "Dose de artemisinina combinada para adultos com malária", "expected_source_contains": "WHO"},
+    {"id": "pt_tb_1", "lang": "pt", "category": "infectious_disease", "query": "Regime de tratamento para tuberculose pulmonar", "expected_source_contains": "WHO"},
+    {"id": "pt_maternal_1", "lang": "pt", "category": "maternal", "query": "Dose de sulfato de magnésio para pré-eclâmpsia grave", "expected_source_contains": "WHO"},
+    {"id": "pt_nutrition_1", "lang": "pt", "category": "nutrition", "query": "Manejo da desnutrição aguda grave em crianças", "expected_source_contains": "MSF"},
+    {"id": "pt_emergency_1", "lang": "pt", "category": "emergency", "query": "Tratamento de anafilaxia em adultos com epinefrina", "expected_source_contains": "WHO"},
+    {"id": "pt_drug_1", "lang": "pt", "category": "drug_interactions", "query": "Interações entre varfarina e ácido acetilsalicílico", "expected_source_contains": "OpenFDA"},
+
+    {"id": "sw_malaria_1", "lang": "sw", "category": "malaria", "query": "Dawa ya kwanza ya malaria kwa watoto wadogo", "expected_source_contains": "WHO"},
+    {"id": "sw_malaria_2", "lang": "sw", "category": "malaria", "query": "Kipimo cha tiba mchanganyiko ya artemisinin", "expected_source_contains": "WHO"},
+    {"id": "sw_tb_1", "lang": "sw", "category": "infectious_disease", "query": "Matibabu ya kifua kikuu cha mapafu", "expected_source_contains": "WHO"},
+    {"id": "sw_maternal_1", "lang": "sw", "category": "maternal", "query": "Kipimo cha magnesium sulfate kwa preeclampsia", "expected_source_contains": "WHO"},
+    {"id": "sw_nutrition_1", "lang": "sw", "category": "nutrition", "query": "Matibabu ya utapiamlo mkali kwa watoto", "expected_source_contains": "MSF"},
+    {"id": "sw_emergency_1", "lang": "sw", "category": "emergency", "query": "Matibabu ya anaphylaxis kipimo cha epinephrine", "expected_source_contains": "WHO"},
+
+    {"id": "hi_malaria_1", "lang": "hi", "category": "malaria", "query": "बच्चों में मलेरिया के लिए पहली दवा क्या है?", "expected_source_contains": "WHO"},
+    {"id": "hi_malaria_2", "lang": "hi", "category": "malaria", "query": "वयस्कों के लिए आर्टेमिसिनिन संयोजन चिकित्सा खुराक", "expected_source_contains": "WHO"},
+    {"id": "hi_tb_1", "lang": "hi", "category": "infectious_disease", "query": "फेफड़ों के तपेदिक का उपचार आहार", "expected_source_contains": "WHO"},
+    {"id": "hi_maternal_1", "lang": "hi", "category": "maternal", "query": "गंभीर प्रीक्लेम्पसिया के लिए मैग्नीशियम सल्फेट खुराक", "expected_source_contains": "WHO"},
+    {"id": "hi_nutrition_1", "lang": "hi", "category": "nutrition", "query": "बच्चों में गंभीर तीव्र कुपोषण का प्रबंधन", "expected_source_contains": "MSF"},
+    {"id": "hi_emergency_1", "lang": "hi", "category": "emergency", "query": "वयस्कों में एनाफिलैक्सिस उपचार एपिनेफ्रिन खुराक", "expected_source_contains": "WHO"},
+
+    {"id": "fr_malaria_1", "lang": "fr", "category": "malaria", "query": "Quel est le traitement de première ligne du paludisme chez l'enfant?", "expected_source_contains": "WHO"},
+    {"id": "fr_malaria_2", "lang": "fr", "category": "malaria", "query": "Posologie de la combinaison à base d'artémisinine chez l'adulte", "expected_source_contains": "WHO"},
+    {"id": "fr_tb_1", "lang": "fr", "category": "infectious_disease", "query": "Schéma thérapeutique standard de la tuberculose pulmonaire", "expected_source_contains": "WHO"},
+    {"id": "fr_maternal_1", "lang": "fr", "category": "maternal", "query": "Dose de sulfate de magnésium dans la prééclampsie sévère", "expected_source_contains": "WHO"},
+    {"id": "fr_nutrition_1", "lang": "fr", "category": "nutrition", "query": "Prise en charge de la malnutrition aiguë sévère chez l'enfant", "expected_source_contains": "MSF"},
+    {"id": "fr_emergency_1", "lang": "fr", "category": "emergency", "query": "Traitement de l'anaphylaxie chez l'adulte dose d'épinéphrine", "expected_source_contains": "WHO"},
+    {"id": "fr_drug_1", "lang": "fr", "category": "drug_interactions", "query": "Interactions entre la warfarine et l'aspirine", "expected_source_contains": "OpenFDA"},
+
+    {"id": "en_extra_1", "lang": "en", "category": "infectious_disease", "query": "Treatment of cholera in adults oral rehydration", "expected_source_contains": "WHO"},
+    {"id": "en_extra_2", "lang": "en", "category": "infectious_disease", "query": "First-line antibiotic for community-acquired pneumonia in children", "expected_source_contains": "WHO"},
+    {"id": "en_extra_3", "lang": "en", "category": "emergency", "query": "Snake bite envenomation antivenom administration", "expected_source_contains": "MSF"},
+    {"id": "en_extra_4", "lang": "en", "category": "maternal", "query": "Iron and folic acid supplementation during pregnancy", "expected_source_contains": "WHO"},
+    {"id": "en_extra_5", "lang": "en", "category": "drug_interactions", "query": "ACE inhibitor side effects and monitoring", "expected_source_contains": "OpenFDA"},
+    {"id": "en_extra_6", "lang": "en", "category": "infectious_disease", "query": "HIV antiretroviral therapy first-line for adults", "expected_source_contains": "WHO"},
+
+    {"id": "oos_1", "lang": "en", "category": "out_of_scope", "query": "Best smartphone to buy in 2026", "expect_refusal": true},
+    {"id": "oos_2", "lang": "en", "category": "out_of_scope", "query": "How to write a Python function", "expect_refusal": true},
+    {"id": "oos_3", "lang": "en", "category": "out_of_scope", "query": "What's the capital of Brazil", "expect_refusal": true},
+    {"id": "oos_4", "lang": "pt", "category": "out_of_scope", "query": "Qual é a melhor receita de feijoada", "expect_refusal": true}
+  ]
+}

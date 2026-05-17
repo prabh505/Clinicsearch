@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual env
+.python-version
+
+# Environment
+.env
+
+# Project data
+data/raw/*.pdf
+data/raw/*.json
+data/chunks/
+data/chroma_db/
+
+# Build artifacts
+apk_wrapper/.build/
+apk_wrapper/clinicsearch.apk
+apk_wrapper/icon.png
+
+# Evaluation outputs
+eval/eval_results.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
