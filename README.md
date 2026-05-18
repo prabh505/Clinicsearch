@@ -1,10 +1,18 @@
-# 🩺 ClinicSearch
+<p align="center">
+  <img src="apk_wrapper/logo_banner.png" alt="ClinicSearch — Care that works offline" width="600"/>
+</p>
 
-**Offline multilingual clinical knowledge for rural healthcare workers.**
+<p align="center">
+  <strong>Offline multilingual clinical knowledge for rural healthcare workers.</strong>
+</p>
 
-A retrieval-augmented generation (RAG) system that lets a community health worker ask a clinical question — in English, Português, Swahili, हिन्दी, or Français — by voice or by text, and receive a cited answer from WHO clinical guidelines, MSF Clinical Guidelines, and OpenFDA drug data. Runs entirely offline on a laptop, with a phone connecting over local WiFi.
+<p align="center">
+  A retrieval-augmented generation system that lets a community health worker ask a clinical question — in English, Português, Swahili, हिन्दी, or Français — by voice or by text, and receive a cited answer from WHO clinical guidelines, MSF Clinical Guidelines, and OpenFDA drug data. Runs entirely offline on a laptop, with a phone connecting over local WiFi.
+</p>
 
-Built for the [Gemma 4 Good Hackathon](https://www.kaggle.com/competitions/gemma-4-good-hackathon).
+<p align="center">
+  Built for the <a href="https://www.kaggle.com/competitions/gemma-4-good-hackathon">Gemma 4 Good Hackathon</a>.
+</p>
 
 ---
 
@@ -173,9 +181,10 @@ clinicsearch/
 │   ├── build_apk.sh                # APK build script
 │   └── icon.png                    # App icon (auto-generated if missing)
 └── data/
-    ├── raw/                        # Downloaded source documents
-    ├── chunks/                     # Intermediate chunked text
-    └── chroma_db/                  # Persistent vector index
+    └── raw/                        # downloaded source documents
+                                    # note: chunks/ and chroma_db/ are
+                                    # generated locally by ingest/embed
+                                    # and are not committed to git
 ```
 
 ## Configuration
